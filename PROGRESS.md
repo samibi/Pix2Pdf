@@ -16,6 +16,7 @@
 - CI publishes a GitHub Release with the APK on every push to main (tag v0.1.<run>). Fixed signing key in app/debug.keystore so releases update each other.
 - App icon added from user artwork (adaptive icon: gradient background + extracted white glyph foreground, monochrome layer for themed icons).
 - Share sheet: Pix2Doc visibility issue resolved by the user.
+- README added (EN + HE) with docs/icon.png; CI ignores docs-only pushes.
 
 ## Next
 - Test on device: share flow, EXIF rotation, overwrite vs. save as, Hebrew UI.
