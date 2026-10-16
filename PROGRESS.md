@@ -13,6 +13,7 @@
 - CI run #2 green: unit tests pass, debug APK built (artifact `Pix2Doc-debug-apk`). Not yet tested on a device.
 
 - Moved to its own repo samibi/Pix2Pdf (app name stays Pix2Doc).
+- CI publishes a GitHub Release with the APK on every push to main (tag v0.1.<run>). Fixed signing key in app/debug.keystore so releases update each other.
 
 ## Next
 - Test on device: share flow, EXIF rotation, overwrite vs. save as, Hebrew UI.

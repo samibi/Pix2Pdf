@@ -11,12 +11,24 @@ android {
         applicationId = "com.pix2doc"
         minSdk = 29
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.1.0"
+        // CI passes the run number so every release installs as an update.
+        val build = (System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInt()
+        versionCode = build
+        versionName = "0.1.$build"
     }
 
     androidResources {
         generateLocaleConfig = true
+    }
+
+    signingConfigs {
+        getByName("debug") {
+            // Fixed key so APKs from different CI runs update each other.
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
     }
 
     buildTypes {
