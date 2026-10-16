@@ -43,6 +43,10 @@ The APK is written to `app/build/outputs/apk/debug/`. GitHub Actions runs the te
 
 Built with Kotlin, [PdfBox-Android](https://github.com/TomRoush/PdfBox-Android), RecyclerView with ItemTouchHelper, and the platform `PdfRenderer` for page previews.
 
+## License
+
+[Apache-2.0](LICENSE)
+
 ---
 
 ## עברית
@@ -61,3 +65,5 @@ Built with Kotlin, [PdfBox-Android](https://github.com/TomRoush/PdfBox-Android),
 **התקנה:** מורידים את ה-APK מ-[הגרסה האחרונה](../../releases/latest), פותחים אותו ומאשרים התקנה ממקור לא מוכר. נדרש אנדרואיד 10 ומעלה.
 
 **מגבלות:** מיון לפי שם או תאריך עובד רק ב-PDF שנוצר ב-Pix2Doc. PDF שהתקבל בשיתוף הוא לקריאה בלבד, ולכן שומרים אותו כקובץ חדש.
+
+**רישיון:** [Apache-2.0](LICENSE)

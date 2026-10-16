@@ -17,6 +17,7 @@
 - App icon added from user artwork (adaptive icon: gradient background + extracted white glyph foreground, monochrome layer for themed icons).
 - Share sheet: Pix2Doc visibility issue resolved by the user.
 - README added (EN + HE) with docs/icon.png; CI ignores docs-only pushes.
+- License: Apache-2.0 (LICENSE + README section). Commit marked [skip ci], no release.
 
 ## Next
 - Test on device: share flow, EXIF rotation, overwrite vs. save as, Hebrew UI.
